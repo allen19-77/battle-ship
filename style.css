@@ -1,0 +1,67 @@
+.wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.board {
+	border: 2px solid;
+	border-collapse: collapse;
+}
+
+td {
+	border: 2px solid darkblue;
+	width: 20px;
+	height: 20px;
+	background: rgb(109, 175, 196);
+	position: relative;
+	
+}
+
+th {
+	
+	width: 20px;
+	height: 20px;
+	
+}
+
+#start-btn {
+	color: white;
+	text-align: center;
+	background: rgb(2, 77, 27);
+	border-radius: 10%;
+	border: none ;
+	padding: 5px 10px;
+	margin:10px 225px;
+}
+
+
+
+.ship::after {
+	content: '';
+	display: block;
+	background: lightgrey; 
+	border: 2px solid grey;
+	border-radius: 5px;
+	inset: 0;
+	position:absolute;
+
+}
+
+.ship.hit::after {
+	background: red;
+	border: 2px solid darkred;
+}
+
+.miss::after {
+	content: '';
+	display: block;
+	/*background: aqua; */
+	border: 2px solid rgb(170, 255, 255);
+	border-radius: 50%;
+	inset: 5px;
+	position:absolute; 
+}
+
+
+
+
